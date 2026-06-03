@@ -98,3 +98,22 @@ Balance feedback, bug reports, and suggestions are welcome. The datapack was cre
 ## License
 
 This project is provided as-is for personal use and gameplay. Please contact the author before redistributing modified versions.
+
+## Dependencies
+
+This datapack requires **VillagerConfig** by **DrexHD** to function.
+
+VillagerConfig provides the custom villager trade framework used by this datapack.
+
+Download VillagerConfig:
+https://modrinth.com/mod/villagerconfig
+
+GitHub:
+https://github.com/DrexHD/misode.github.io
+
+## Credits
+
+Special thanks to **DrexHD** for creating VillagerConfig and the accompanying villager trade editor tools that made the creation and testing of this datapack possible.
+
+Skyblock Trading Rework was built using VillagerConfig as its trade framework dependency. All custom trade design, balancing, and configuration included in this datapack were created specifically for this project, while the underlying trade modification system is provided by VillagerConfig.
+
