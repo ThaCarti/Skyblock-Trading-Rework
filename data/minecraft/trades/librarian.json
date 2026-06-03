@@ -1,0 +1,578 @@
+{
+  "tiers": [
+    {
+      "groups": [
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 24,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:paper"
+              },
+              "max_uses": 16,
+              "price_multiplier": 0.05,
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "trader_experience": 2
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 8,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "cost_b": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:book"
+              },
+              "price_multiplier": 0.05,
+              "max_uses": 12,
+              "double_trade_price_enchantments": "#minecraft:double_trade_price",
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  },
+                  {
+                    "function": "minecraft:enchant_randomly",
+                    "include_additional_cost_component": true,
+                    "only_compatible": false,
+                    "options": "#minecraft:tradeable"
+                  },
+                  {
+                    "function": "minecraft:filtered",
+                    "item_filter": {
+                      "items": "minecraft:enchanted_book",
+                      "predicates": {
+                        "minecraft:stored_enchantments": [
+                          {}
+                        ]
+                      }
+                    },
+                    "on_fail": {
+                      "function": "minecraft:discard"
+                    }
+                  }
+                ],
+                "name": "minecraft:enchanted_book"
+              },
+              "trader_experience": 2
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "name": "minecraft:emerald",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1
+                  }
+                ]
+              },
+              "result": {
+                "type": "minecraft:item",
+                "name": "minecraft:book",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1
+                  }
+                ]
+              },
+              "price_multiplier": 0.05,
+              "trader_experience": 2,
+              "max_uses": 12
+            }
+          ]
+        }
+      ],
+      "total_exp_required": 0
+    },
+    {
+      "groups": [
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 4,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:book"
+              },
+              "price_multiplier": 0.06,
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "trader_experience": 5,
+              "max_uses": 8
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 16,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "cost_b": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:book"
+              },
+              "price_multiplier": 0.06,
+              "max_uses": 8,
+              "double_trade_price_enchantments": "#minecraft:double_trade_price",
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  },
+                  {
+                    "function": "minecraft:enchant_randomly",
+                    "include_additional_cost_component": true,
+                    "only_compatible": false,
+                    "options": "#minecraft:tradeable"
+                  },
+                  {
+                    "function": "minecraft:filtered",
+                    "item_filter": {
+                      "items": "minecraft:enchanted_book",
+                      "predicates": {
+                        "minecraft:stored_enchantments": [
+                          {}
+                        ]
+                      }
+                    },
+                    "on_fail": {
+                      "function": "minecraft:discard"
+                    }
+                  }
+                ],
+                "name": "minecraft:enchanted_book"
+              },
+              "trader_experience": 5
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "name": "minecraft:emerald",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 8
+                  }
+                ]
+              },
+              "result": {
+                "type": "minecraft:item",
+                "name": "minecraft:lectern",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1
+                  }
+                ]
+              },
+              "price_multiplier": 0.06,
+              "trader_experience": 5,
+              "max_uses": 8
+            }
+          ]
+        }
+      ],
+      "total_exp_required": 15
+    },
+    {
+      "groups": [
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 8,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "price_multiplier": 0.07,
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 3,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:ink_sac"
+              },
+              "trader_experience": 10,
+              "max_uses": 6
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 16,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "cost_b": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 2,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:book"
+              },
+              "price_multiplier": 0.07,
+              "max_uses": 6,
+              "double_trade_price_enchantments": "#minecraft:double_trade_price",
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  },
+                  {
+                    "function": "minecraft:enchant_randomly",
+                    "include_additional_cost_component": true,
+                    "only_compatible": false,
+                    "options": "#minecraft:tradeable"
+                  },
+                  {
+                    "function": "minecraft:filtered",
+                    "item_filter": {
+                      "items": "minecraft:enchanted_book",
+                      "predicates": {
+                        "minecraft:stored_enchantments": [
+                          {}
+                        ]
+                      }
+                    },
+                    "on_fail": {
+                      "function": "minecraft:discard"
+                    }
+                  }
+                ],
+                "name": "minecraft:enchanted_book"
+              },
+              "trader_experience": 10
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 3,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "price_multiplier": 0.07,
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:lantern"
+              },
+              "trader_experience": 10,
+              "max_uses": 8
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "name": "minecraft:emerald",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 8
+                  }
+                ]
+              },
+              "result": {
+                "type": "minecraft:item",
+                "name": "minecraft:lectern",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1
+                  }
+                ]
+              },
+              "price_multiplier": 0.07,
+              "trader_experience": 10,
+              "max_uses": 6
+            }
+          ]
+        }
+      ],
+      "total_exp_required": 100
+    },
+    {
+      "groups": [
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 2,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:writable_book"
+              },
+              "price_multiplier": 0.08,
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "trader_experience": 10,
+              "max_uses": 4
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 5,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "price_multiplier": 0.08,
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:clock"
+              },
+              "trader_experience": 10,
+              "max_uses": 4
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 12,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald"
+              },
+              "price_multiplier": 0.08,
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:shroomlight"
+              },
+              "trader_experience": 10,
+              "max_uses": 4
+            }
+          ]
+        }
+      ],
+      "total_exp_required": 200
+    },
+    {
+      "groups": [
+        {
+          "num_to_select": 2,
+          "trades": [
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "count": 5,
+                    "add": false,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:emerald_block"
+              },
+              "price_multiplier": 0.1,
+              "result": {
+                "type": "minecraft:item",
+                "functions": [
+                  {
+                    "add": false,
+                    "count": 1,
+                    "function": "minecraft:set_count"
+                  }
+                ],
+                "name": "minecraft:enchanting_table"
+              },
+              "trader_experience": 15,
+              "max_uses": 2
+            },
+            {
+              "cost_a": {
+                "type": "minecraft:item",
+                "name": "minecraft:emerald",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 32
+                  }
+                ]
+              },
+              "cost_b": {
+                "type": "minecraft:item",
+                "name": "minecraft:book",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 3
+                  }
+                ]
+              },
+              "result": {
+                "type": "minecraft:item",
+                "name": "minecraft:enchanted_book",
+                "functions": [
+                  {
+                    "function": "minecraft:set_count",
+                    "count": 1,
+                    "add": false
+                  },
+                  {
+                    "function": "minecraft:enchant_randomly",
+                    "options": "#minecraft:tradeable",
+                    "only_compatible": false,
+                    "include_additional_cost_component": true
+                  },
+                  {
+                    "function": "minecraft:filtered",
+                    "item_filter": {
+                      "items": "minecraft:enchanted_book",
+                      "predicates": {
+                        "minecraft:stored_enchantments": [
+                          {}
+                        ]
+                      }
+                    },
+                    "on_fail": {
+                      "function": "minecraft:discard"
+                    }
+                  }
+                ]
+              },
+              "price_multiplier": 0.1,
+              "trader_experience": 15,
+              "max_uses": 2
+            }
+          ]
+        }
+      ],
+      "total_exp_required": 325
+    }
+  ]
+}
